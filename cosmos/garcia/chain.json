@@ -1,0 +1,66 @@
+{
+  "$schema": "../chain.schema.json",
+  "chain_name": "garcia",
+  "status": "live",
+  "network_type": "mainnet",
+  "website": "https://garcia.com",
+  "pretty_name": "Garcia Chain",
+  "chain_id": "garcia-1",
+  "bech32_prefix": "garcia",
+  "daemon_name": "garciad",
+  "node_home": "$HOME/.garcia",
+  "key_algos": [
+    "secp256k1"
+  ],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "ugarcia",
+        "fixed_min_gas_price": 0.01,
+        "low_gas_price": 0.01,
+        "average_gas_price": 0.025,
+        "high_gas_price": 0.04
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": [
+      {
+        "denom": "ugarcia"
+      }
+    ]
+  },
+  "codebase": {
+    "git_repo": "https://github.com/ajdhegeu-stack/garcia",
+    "recommended_version": "v1.0.0",
+    "compatible_versions": ["v1.0.0"],
+    "cosmos_sdk_version": "0.50.x",
+    "consensus": {
+      "type": "cometbft",
+      "version": "0.38"
+    }
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "http://3.34.122.108:26657",
+        "provider": "garcia"
+      }
+    ],
+    "rest": [
+      {
+        "address": "http://3.34.122.108:1317",
+        "provider": "garcia"
+      }
+    ]
+  },
+  "images": [
+    {
+      "png": "https://i.imgur.com/TZRvn6W.png",
+      "theme": {
+        "primary_color_hex": "#000000"
+      }
+    }
+  ]
+}
